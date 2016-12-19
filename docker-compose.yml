@@ -1,0 +1,4 @@
+rest-demo:
+  image: aqitrade/rest-demo
+  ports:
+    - "8000:8000"
