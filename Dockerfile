@@ -1,9 +1,15 @@
-FROM aqitrade/flask-module 
+FROM python:3-alpine
 
-ADD . /rest_demo
+RUN mkdir -p /usr/src/rest_demo
+WORKDIR /usr/src/rest_demo
 
-ENV PYTHONPATH=.:/rest_demo
+COPY requirements.txt /usr/src/rest_demo/
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . /usr/src/rest_demo
+
+ENV PYTHONPATH=.:/usr/src/rest_demo
 
 EXPOSE 8000
 
-CMD cd /rest_demo && python rest_api_demo/app.py 
+CMD cd /usr/src/rest_demo && python rest_api_demo/app.py
