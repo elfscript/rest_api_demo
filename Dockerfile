@@ -1,15 +1,15 @@
 FROM python:3-alpine
 
-RUN mkdir -p /usr/src/rest_demo
-WORKDIR /usr/src/rest_demo
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
 
-COPY requirements.txt /usr/src/rest_demo/
+COPY requirements.txt /usr/src/app/
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY . /usr/src/rest_demo
+COPY . /usr/src/app
 
-ENV PYTHONPATH=.:/usr/src/rest_demo
+ENV PYTHONPATH=.:/usr/src/app
 
 EXPOSE 8000
 
-CMD cd /usr/src/rest_demo && python rest_api_demo/app.py
+CMD cd /usr/src/app && python rest_api_demo/app.py
