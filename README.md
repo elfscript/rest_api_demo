@@ -1,4 +1,4 @@
-# rest_api_demo  [![Build Status](https://travis-ci.org/nikos/rest_api_demo.svg?branch=master)](https://travis-ci.org/nikos/rest_api_demo)
+# rest_api_demo  [![Build Status](https://travis-ci.org/nikos/rest_api_demo.svg?branch=master)](https://travis-ci.org/nikos/rest_api_demo)  [![Image Info](https://images.microbadger.com/badges/image/nikos/rest_api_demo.svg)](https://microbadger.com/images/nikos/rest_api_demo)
 
 This repository contains boilerplate code for a RESTful API based on Flask and Flask-RESTPlus in Python.
 
@@ -8,6 +8,6 @@ http://michal.karzynski.pl/blog/2016/06/19/building-beautiful-restful-apis-using
 It makes use of:
 * Python 3
 * Flask
-* Swagger UI (`restplus`)
-* Simple SQL model (`SQLAlchemy`)
-* Alpine Linux (if running as docker container)
+* Swagger UI (via `restplus`)
+* Simple SQL model (thanks to `SQLAlchemy`)
+* Alpine Linux (if running as a docker container)
