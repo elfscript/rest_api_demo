@@ -1,4 +1,4 @@
-# rest_api_demo  [![Build Status](https://travis-ci.org/nikos/rest_api_demo.svg?branch=master)](https://travis-ci.org/nikos/rest_api_demo)  [![Image Info](https://images.microbadger.com/badges/image/nikos/rest_api_demo.svg)](https://microbadger.com/images/nikos/rest_api_demo)
+# rest_api_demo  [![Build Status](https://travis-ci.org/nikos/rest_api_demo.svg?branch=master)](https://travis-ci.org/nikos/rest_api_demo)  [![Image Info](https://images.microbadger.com/badges/image/nikos/flask-restplus-demo.svg)](https://microbadger.com/images/nikos/flask-restplus-demo)
 
 This repository contains boilerplate code for a RESTful API based on Flask and Flask-RESTPlus in Python.
 
