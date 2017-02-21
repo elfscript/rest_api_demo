@@ -41,7 +41,6 @@ def main():
     initialize_app(app)
     log.info('>>>>> Starting development server at http://%s:%d/api/ <<<<<', settings.FLASK_SERVER_HOST, settings.FLASK_SERVER_PORT)
     app.run(host=settings.FLASK_SERVER_HOST, port=settings.FLASK_SERVER_PORT, debug=settings.FLASK_DEBUG)
-    # app.run(debug=settings.FLASK_DEBUG)
 
 
 if __name__ == "__main__":
