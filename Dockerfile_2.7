@@ -1,0 +1,15 @@
+# to build 3hdeng/rest-api-demo:2.7
+FROM 3hdeng/flask:2.7
+MAINTAINER 3hdeng
+RUN  pip install -U Flask &&  echo "Flask installed"
+RUN  pip install -U flask-swagger &&  echo "flask-swagger installed"
+
+# Install uWSGI
+RUN pip install uwsgi
+#ADD uwsgi.ini
+#
+
+RUN pip install flask-restplus==0.9.2
+RUN pip install Flask-SQLAlchemy==2.1 
+ENV PYTHONPATH=.:$PYTHONPATH
+CMD []
